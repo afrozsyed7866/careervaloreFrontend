@@ -1,0 +1,58 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-outfit), sans-serif;
+    line-height: 1.5;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+}
+  
+  /* Remove list styles */
+  ul {
+    list-style: none;
+  }
+  
+  /* Remove link underlines */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Reset button styles */
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Table resets */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Other common resets */
+  input,
+  textarea {
+    border: none;
+    outline: none;
+  }
+  #container-f3ae654a2213ba937cbbbfd402e635b9 {
+    margin: 20px auto;
+    max-width: 100%;
+  }
