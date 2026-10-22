@@ -1,0 +1,93 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-outfit), sans-serif;
+    line-height: 1.5;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+}
+  
+  /* Remove list styles */
+  ul {
+    list-style: none;
+  }
+  
+  /* Remove link underlines */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Reset button styles */
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Table resets */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Other common resets */
+  input,
+  textarea {
+    border: none;
+    outline: none;
+  }
+  #container-f3ae654a2213ba937cbbbfd402e635b9 {
+    margin: 20px auto;
+    max-width: 100%;
+  }
+
+  /* ===== Blog rich-text content (editor + admin viewer + public post page) ===== */
+/* Needed because the resets above remove list bullets, margins and link styles. */
+.blog-content { line-height: 1.75; word-wrap: break-word; overflow-wrap: anywhere; }
+.blog-content h1 { font-size: 2rem; font-weight: 700; margin: 1.25rem 0 .75rem; line-height: 1.25; }
+.blog-content h2 { font-size: 1.5rem; font-weight: 700; margin: 1.25rem 0 .75rem; line-height: 1.3; }
+.blog-content h3 { font-size: 1.25rem; font-weight: 600; margin: 1rem 0 .5rem; }
+.blog-content h4 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 .5rem; }
+.blog-content p { margin: .75rem 0; }
+.blog-content strong, .blog-content b { font-weight: 700; }
+.blog-content em, .blog-content i { font-style: italic; }
+.blog-content u { text-decoration: underline; }
+.blog-content s, .blog-content strike { text-decoration: line-through; }
+.blog-content ul { list-style: disc; padding-left: 1.5rem; margin: .75rem 0; }
+.blog-content ol { list-style: decimal; padding-left: 1.5rem; margin: .75rem 0; }
+.blog-content li { margin: .25rem 0; }
+.blog-content li > p { margin: 0; }
+.blog-content blockquote { border-left: 4px solid #d1d5db; padding-left: 1rem; color: #4b5563; margin: 1rem 0; }
+.blog-content a { color: #2563eb; text-decoration: underline; }
+.blog-content img { max-width: 100%; height: auto; border-radius: .5rem; margin: 1rem 0; display: block; }
+.blog-content hr { border: 0; border-top: 1px solid #e5e7eb; margin: 1.5rem 0; }
+.blog-content pre { background: #f3f4f6; padding: .75rem 1rem; border-radius: .5rem; overflow-x: auto; margin: 1rem 0; }
+.blog-content code { background: #f3f4f6; padding: .1rem .3rem; border-radius: .25rem; font-size: .9em; }
+.blog-content table { border-collapse: collapse; width: 100%; margin: 1rem 0; table-layout: fixed; }
+.blog-content th, .blog-content td { border: 1px solid #d1d5db; padding: .5rem; vertical-align: top; text-align: left; }
+.blog-content th { background: #f3f4f6; font-weight: 600; }
+.blog-content p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+.blog-content .selectedCell { background: #dbeafe; }
+.blog-content img.ProseMirror-selectednode { outline: 2px solid #3b82f6; }
